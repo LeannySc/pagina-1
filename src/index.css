@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-dark text-cream font-sans;
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-cream;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-dark;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-dark-300 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-accent/50;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block border border-cream/40 px-8 py-3 text-xs font-sans font-medium uppercase tracking-widest-plus text-cream transition-all duration-500 hover:bg-cream hover:text-dark;
+  }
+
+  .btn-accent {
+    @apply inline-block border border-accent px-8 py-3 text-xs font-sans font-medium uppercase tracking-widest-plus text-accent transition-all duration-500 hover:bg-accent hover:text-dark;
+  }
+
+  .section-padding {
+    @apply px-6 py-24 md:px-12 md:py-32 lg:px-20;
+  }
+}

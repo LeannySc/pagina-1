@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:www.jpkdesignco.com)",
+      "WebFetch(domain:crosby-demo.squarespace.com)",
+      "WebFetch(domain:spaceexpertagency.com)",
+      "Bash(cd:*)"
+    ]
+  }
+}
